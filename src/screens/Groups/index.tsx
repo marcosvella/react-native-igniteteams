@@ -9,12 +9,13 @@ import { GroupCard } from '../../components/GroupCard';
 import { ListEmpty } from '../../components/ListEmpty';
 import { Button } from '../../components/Button';
 
+
 export function Groups() {
   const [groups, setGroups] = useState<string[]>([])
   const navigation = useNavigation()
 
   function HandleNewGroup() {
-    navigation.navigate('groups')
+    navigation.navigate('new')
   }
 
   return (
